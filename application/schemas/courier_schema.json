@@ -1,0 +1,31 @@
+{
+    "title": "Courier",
+    "type": "object",
+    "properties": {
+        "courier_id": {
+          "type": "integer"
+        },
+        "courier_type": {
+          "type": "string"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        },
+        "working_hours": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "courier_id",
+        "courier_type",
+        "regions",
+        "working_hours"
+    ]
+}

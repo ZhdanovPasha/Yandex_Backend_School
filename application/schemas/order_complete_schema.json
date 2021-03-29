@@ -1,0 +1,21 @@
+{
+    "title": "Order_complete",
+    "type": "object",
+    "properties": {
+        "courier_id": {
+          "type": "integer"
+        },
+        "order_id": {
+          "type": "integer"
+        },
+        "complete_time": {
+          "type": "string"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "courier_id",
+        "order_id",
+        "complete_time"
+    ]
+}

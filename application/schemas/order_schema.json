@@ -1,0 +1,30 @@
+{
+    "title": "Order",
+    "type": "object",
+    "properties": {
+        "order_id": {
+          "type": "integer"
+        },
+        "weight": {
+          "type": "number",
+          "minimum": 0.01,
+          "maximum": 50
+        },
+        "region": {
+          "type": "integer"
+        },
+        "delivery_hours": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "order_id",
+        "weight",
+        "region",
+        "delivery_hours"
+    ]
+}

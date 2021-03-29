@@ -1,0 +1,13 @@
+{
+    "title": "Order_assign",
+    "type": "object",
+    "properties": {
+        "courier_id": {
+          "type": "integer"
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "courier_id"
+    ]
+}
